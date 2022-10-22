@@ -1,6 +1,6 @@
-import {ReactNode} from "react";
+import { ReactNode } from "react";
 import NextLink from "next/link";
-import {Button} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 const variants = {
     link: {
@@ -17,7 +17,6 @@ const variants = {
     },
     outline: {
         variant: 'outline',
-        color: 'primary',
         bg: 'white',
     },
 };

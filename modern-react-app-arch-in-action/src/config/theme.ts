@@ -1,8 +1,8 @@
-import {extendTheme} from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 
 const colors = {
-    primary: '#1a365d',
-    primaryAccent: '#ffffff',
+    primary: "#1a365d",
+    primaryAccent: "white"
 };
 
 const styles = {
