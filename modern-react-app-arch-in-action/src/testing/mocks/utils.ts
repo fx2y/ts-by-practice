@@ -20,8 +20,7 @@ export const authenticate = ({ email, password }: { email: string; password: str
   const user = db.user.findFirst({ where: { email: { equals: email } } });
   if (user?.password === password) {
     const sanitizedUser = sanitizeUser(user);
-    const encodedToken = AUTH_TOKEN;
-    return { user: sanitizedUser, token: encodedToken };
+    return { user: sanitizedUser, jwt: AUTH_TOKEN };
   }
   throw new Error("Invalid username or password");
 };
